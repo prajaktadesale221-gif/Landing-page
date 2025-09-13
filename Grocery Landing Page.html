@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Landing Page</title>
+  <link rel="stylesheet" href="./Grocery Landing Page_files/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Fresh Grocery Store</h1>
+    <nav>
+      <a href="http://127.0.0.1:5500/index.html#">Home</a>
+      <a href="http://127.0.0.1:5500/index.html#">Products</a>
+      <a href="http://127.0.0.1:5500/index.html#">About</a>
+      <a href="http://127.0.0.1:5500/index.html#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Fresh Groceries Delivered To Your Doorstep</h2>
+    
+  </section>
+
+  <!-- Products Section -->
+  <div class="container">
+    <h2 class="section-title">Our Products</h2>
+    <div class="row">
+      <div class="product">
+        <img src="./Grocery Landing Page_files/360_F_78097722_DS0SKdmNCZLfefL1CP63kSbMzjjjv9Xy.jpg" alt="Fruits">
+        <h3>Fresh Fruits</h3>
+        <p>Juicy and organic fruits directly from the farm.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./Grocery Landing Page_files/360_F_147516063_hCXI8VUIdBYud0B0hhS3Yo5CFTT1a4g8.jpg" alt="Vegetables">
+        <h3>Organic Vegetables</h3>
+        <p>Healthy and green vegetables for your meals.</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./Grocery Landing Page_files/360_F_585504652_mx2E5zY3SZxOE9yjuHArUIMWFweAgHY6.jpg" alt="Dairy">
+        <h3>Dairy Products</h3>
+        <p>Fresh milk, cheese, and more for your family.</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fresh Grocery Store | All rights reserved.</p>
+  </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
